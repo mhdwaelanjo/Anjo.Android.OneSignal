@@ -1,0 +1,55 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='MapModel']" />
+  <remove-node path="/api/package[@name='com.onesignal.core.internal.database.impl']/class[@name='OneSignalDbContract']" />
+ 
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']/method[@name='subscribe' and count(parameter)=1 and parameter[1][@type='com.onesignal.common.modeling.IModelStoreChangeHandler&lt;TModel&gt;']]" />
+  <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="subscribe" native="false" return="void" static="false" synchronized="false" visibility="public">
+		  <parameter name="handler" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']/method[@name='unsubscribe' and count(parameter)=1 and parameter[1][@type='com.onesignal.common.modeling.IModelStoreChangeHandler&lt;TModel&gt;']]" />
+  <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="unsubscribe" native="false" return="void" static="false" synchronized="false" visibility="public">
+		  <parameter name="handler" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/interface[@name='IModelStore']/method[@name='create' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]" />
+ <!--<add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+		  <parameter name="jsonObject" type="Java.Lang.Object" />
+	  </method>
+  </add-node>-->
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SingletonModelStore']/method[@name='subscribe' and count(parameter)=1 and parameter[1][@type='com.onesignal.common.modeling.ISingletonModelStoreChangeHandler&lt;TModel&gt;']]" />
+  <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SingletonModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="subscribe" native="false" return="void" static="false" synchronized="false" visibility="public">
+		  <parameter name="handler" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SingletonModelStore']/method[@name='unsubscribe' and count(parameter)=1 and parameter[1][@type='com.onesignal.common.modeling.ISingletonModelStoreChangeHandler&lt;TModel&gt;']]" />
+  <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SingletonModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="unsubscribe" native="false" return="void" static="false" synchronized="false" visibility="public">
+		  <parameter name="handler" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+  <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SimpleModelStore']/method[@name='create' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]" />
+  <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='SimpleModelStore']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+		  <parameter name="jsonObject" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+</metadata>
