@@ -9,6 +9,7 @@
 
   <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='MapModel']" />
   <remove-node path="/api/package[@name='com.onesignal.core.internal.database.impl']/class[@name='OneSignalDbContract']" />
+  <remove-node path="/api/package[@name='com.onesignal.user.internal.subscriptions']/class[@name='SubscriptionModelStore']/method[@name='replaceAll' and count(parameter)=2 and parameter[1][@type='java.util.List&lt;com.onesignal.user.internal.subscriptions.SubscriptionModel&gt;'] and parameter[2][@type='java.lang.String']]" />
  
   <remove-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']/method[@name='subscribe' and count(parameter)=1 and parameter[1][@type='com.onesignal.common.modeling.IModelStoreChangeHandler&lt;TModel&gt;']]" />
   <add-node path="/api/package[@name='com.onesignal.common.modeling']/class[@name='ModelStore']">
