@@ -7,18 +7,18 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.OneSignal.Location</PackageId>
-		<PackageVersion>5.0.5</PackageVersion>
-		<AssemblyVersion>5.0.5</AssemblyVersion>
-		<FileVersion>5.0.5</FileVersion>
-		<Version>5.0.5</Version>
+		<PackageVersion>5.1.1</PackageVersion>
+		<AssemblyVersion>5.1.1</AssemblyVersion>
+		<FileVersion>5.1.1</FileVersion>
+		<Version>5.1.1</Version>
 		<Title>Anjo Android OneSignal.Location SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
 		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.OneSignal</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - OneSignal.Location SDK</Description>
-		<PackageReleaseNotes>OneSignal.Location SDK v5.0.5</PackageReleaseNotes>
-		<Copyright>Copyright (c) 2023 Wael Anjo</Copyright>
+		<PackageReleaseNotes>OneSignal.Location SDK v5.1.1</PackageReleaseNotes>
+		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
 		<PackageTags>Xamarin.Android, OneSignal, push notification</PackageTags>
 		<Summary>OneSignal is a free email, sms, push notification, and in-app message service for mobile apps. This plugin makes it easy to integrate your native Android or Amazon app with OneSignal.</Summary>
 		<!-- Include symbol files (*.pdb) in the built .nupkg -->
@@ -29,7 +29,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="Jars\location-5.0.5.aar" />
+	  <None Remove="Jars\location-5.1.1.aar" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
@@ -46,9 +46,9 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.9.10.1" />
-		<PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.7.3.1" />
-		<PackageReference Include="Xamarin.KotlinX.Coroutines.Core" Version="1.7.3.1" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.9.22" />
+		<PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.7.3.3" />
+		<PackageReference Include="Xamarin.KotlinX.Coroutines.Core" Version="1.7.3.3" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Anjo.Android.OneSignal.Core\Anjo.Android.OneSignal.Core.csproj" />
