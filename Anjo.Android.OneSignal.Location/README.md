@@ -4,7 +4,7 @@
 OneSignal Location SDK for .NET for Android (formerly Xamarin.Android) Binding Library - Wael Anjo
 ---------------------------------
 
-[![NuGet](https://buildstats.info/nuget/Anjo.Android.OneSignal.Location)](https://www.nuget.org/packages/Anjo.Android.OneSignal.Location/)
+[![NuGet Version](https://img.shields.io/nuget/v/Anjo.Android.OneSignal.Location)](https://www.nuget.org/packages/Anjo.Android.OneSignal.Location) [![GitHub License](https://img.shields.io/github/license/mhdwaelanjo/Anjo.Android.OneSignal)](https://github.com/mhdwaelanjo/Anjo.Android.OneSignal/blob/master/LICENSE.txt)
 
 OneSignal is a free email, sms, push notification, and in-app message service for mobile apps. This plugin makes it easy to integrate your native Android or Amazon app with OneSignal.
 Learn more at https://onesignal.com/

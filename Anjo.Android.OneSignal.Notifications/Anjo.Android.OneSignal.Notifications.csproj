@@ -7,17 +7,17 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.OneSignal.Notifications</PackageId>
-		<PackageVersion>5.1.18</PackageVersion>
-		<AssemblyVersion>5.1.18</AssemblyVersion>
-		<FileVersion>5.1.18</FileVersion>
-		<Version>5.1.18</Version>
+		<PackageVersion>5.1.23</PackageVersion>
+		<AssemblyVersion>5.1.23</AssemblyVersion>
+		<FileVersion>5.1.23</FileVersion>
+		<Version>5.1.23</Version>
 		<Title>Anjo Android OneSignal.Notifications SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
 		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.OneSignal</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - OneSignal.Notifications SDK</Description>
-		<PackageReleaseNotes>OneSignal.Notifications SDK v5.1.18</PackageReleaseNotes>
+		<PackageReleaseNotes>OneSignal.Notifications SDK v5.1.23</PackageReleaseNotes>
 		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
 		<PackageTags>Xamarin.Android, NET MAUI, OneSignal, push notification, notification-service, in-app-messaging</PackageTags>
 		<Summary>OneSignal is a free email, sms, push notification, and in-app message service for mobile apps. This plugin makes it easy to integrate your native Android or Amazon app with OneSignal.</Summary>
@@ -29,7 +29,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Jars\notifications-5.1.18.aar" />
+	  <None Remove="Jars\notifications-5.1.23.aar" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
